@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reservation.css">
+    <title>Reservation Request</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Reservation Request</h1>
+        <form>
+            <fieldset>
+                <legend>general information</legend>
+                <div class="form-group room">
+                    <label for="arrival">arrival date:</label>
+                    <input type="date" name="arrival" id="arrival" placeholder="12/06/2016">
+                    <small>Arrival date is invalid</small>
+                </div>
+                <div class="form-group room">
+                    <label for="night">nights:</label>
+                    <input type="number" name="night" id="night" placeholder="three">
+                    <small>Nights must be a number</small>
+                </div>
+                <div class="form-group">
+                    <label for="adult">adults:</label>
+                    <select name="name" id="name">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="children">children:</label>
+                    <select name="children" id="children">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>preferences</legend>
+                <div class="form-groups">
+                    <label for="room-type">room type:</label>
+                    <input type="radio" name="room-type" id="" value="standard">standard
+                    <input type="radio" name="room-type" id="" value="business">business
+                    <input type="radio" name="room-type" id="" value="suite">suite
+                </div>
+                <div class="form-groups">
+                    <label for="bed-type">bed type:</label>
+                    <input type="radio" name="bed-type" id="" value="king">king
+                    <input type="radio" name="bed-type" id="" value="double double">double double
+                </div>
+                <div class="form-groups">
+                    <input type="checkbox" name="smoking" id="">smoking
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>contact information</legend>
+                <div class="form-group room">
+                    <label for="name">name:</label>
+                    <input type="text" name="name" id="name">
+                    <small>Name is required.</small>
+                </div>
+                <div class="form-group room">
+                    <label for="email">emial:</label>
+                    <input type="email" name="emial" id="emial" placeholder="grace.gmail.com">
+                    <small>Email address is invalid.</small>
+                </div>
+                <div class="form-group room">
+                    <label for="phone-number">phone:</label>
+                    <input type="tel" name="phone-number" id="" placeholder="123-456-789">
+                    <small>Phone number is invalid.</small>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <button type="submit">submit reservation</button>
+                <button type="reset">clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

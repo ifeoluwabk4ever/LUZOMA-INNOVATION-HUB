@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Work 3</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .header, .footer{
+            background: aqua;
+            text-align: center;
+            padding: 0.5rem 0;
+            border: 0.2rem solid black;
+        }
+        .menu, .content, .recents {
+            width: 33.33%;
+            float: left;
+            height: 250px;
+            text-align: center;
+            padding: 10px;
+        }
+        .menu, .recents{
+            border-left: 0.2rem solid black;
+            border-right: 0.2rem solid black;
+        }
+        ul{
+            list-style: none;
+        }
+        h2, p,li{
+            padding-bottom: 20px;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <header class="header">
+            <h1>Header</h1>
+        </header>
+        <section class="menu">
+            <div>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="content">
+            <div>
+                <h2>Content Area</h2>
+                <p>This is content area. This is content area. This is content area. This is content area.</p>
+                <p>This is content area. This is content area. This is content area. This is content area. This is
+                    content area.This is content area. This is content area.</p>
+            </div>
+        </section>
+        <section class="recents">
+            <div>
+                <h2>Recents</h2>
+            </div>
+        </section>
+        <div class="clear"></div>
+        <footer class="footer">
+            <h3>Footer</h3>
+        </footer>
+    </section>
+</body>
+</html>

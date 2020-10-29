@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container, .container-fluid{
+    background: url('../images/chop23.jpg') center/cover no-repeat;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.opac{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.527);
+}
+.content{
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+}
+.photography, .span, .tara{
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.photography {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.5rem 3rem;
+}
+.photography + .span{
+    margin-bottom: 0;
+}
+.span {
+    margin: 2rem auto;
+}
+.tara{
+    font-size: .7rem;
+}
+.beauty{
+    font-size: 15rem;
+    text-transform: lowercase;
+    font-family: Amplify Personal Use Only;
+    font-weight: 100;
+    margin-bottom: 5rem;
+
+}
+
+.container-fluid{
+    background: white;
+}
+.container-fluid .opac{
+    background: transparent;
+}
+.arrow-one{
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid brown;
+}
+.arrow-two{
+    margin-top: 5rem;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 150px solid brown;
+}
+.arrow-three{
+    margin-top: 5rem;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 170px solid transparent;
+    border-top: 100px solid brown;
+}

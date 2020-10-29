@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Payment Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <section class="hero">
+                <div class="hero-div">
+                    <h1>Form Validation</h1>
+                    <form action="">
+                        <div class="payable">
+                            <label for="Amount-Paid">Amount:</label>
+                            <input type="number" name="Amount-Paid" id="Amount-Paid" placeholder="Enter Amount to be paid">
+                        </div>
+                        <div class="payment-method">
+                            <div>
+                                <label for="Cash">Cash:</label>
+                                <input type="number" name="Cash" class="variables variable" id="Cash" placeholder="Amount paid in Cash">
+                            </div>
+                            <div>
+                                <label for="POS">POS:</label>
+                                <input type="number" name="POS" id="POS" class="variables variable" placeholder="Amount paid with POS">
+                            </div>
+                            <div>
+                                <label for="E-Transfer">E-Transfer:</label>
+                                <input type="number" name="E-Transfer" class="variables variable" id="E-Transfer"
+                                    placeholder="Amount transferred">
+                            </div>
+                        </div><hr>
+                        <div class="payable payable-2">
+                            <label for="Total-Amount-Paid">Total Amount to be Paid:</label>
+                            <input type="number" name="Total-Amount-Paid" id="Total-Amount-Paid" disabled>
+                        </div>
+                        <div class="evaluation">
+                            <div>
+                                <label for="Total-Amount">Total Amount Paid:</label>
+                                <input type="number" name="Total-Amount" id="Total-Amount" disabled>
+                            </div>
+                            <div>
+                                <label for="Balance">Balance:</label>
+                                <input type="number" name="Balance" id="Balance" disabled>
+                            </div>
+                            <div>
+                                <label for="Overall-Total">Overall Total:</label>
+                                <input type="number" name="Overall-Total" id="Overall-Total" disabled>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit">Pay Now</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <script src="payment.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header, footer{
+    background: aqua;
+    text-align: center;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+    border: 0.2rem solid black;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+    height: 50vh;
+}
+.container section{
+    border: 2px solid black;
+    display: flex;
+}
+.container section div {
+    margin: 0 auto ;
+    padding-top: 2rem;
+}
+section h2{
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+ul{
+    list-style-type: none;
+}
+ul li, p{
+    padding: 1rem 0;
+}

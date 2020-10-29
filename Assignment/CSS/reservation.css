@@ -1,0 +1,39 @@
+/* *{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+fieldset{
+    margin: 1rem;
+}
+legend{
+    color: blue;
+    font-weight: 600;
+}
+.form-group{
+    display: grid;
+    margin: 0.5rem 0;
+    grid-template-columns: 1fr 8fr 3fr;
+}
+.room input{
+    width: 30%;
+}
+select{
+    width: 2.2rem;
+}
+button{
+    text-transform: capitalize;
+    margin:0 1.5rem;
+    background: rgb(185, 184, 184);
+    outline: none;
+    width: 15rem;
+    border: 1.5px solid gray;
+}
+small{
+    color: red;
+    font-weight: 600;
+}

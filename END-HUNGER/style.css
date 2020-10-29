@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainTransition: 0.5s ease-in-out;
+    --primary-color: #112238;
+    --secondary-color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header{
+    background: #112238;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    place-items: center;
+}
+.logo-div b{
+    text-transform: uppercase;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-active{
+    color: maroon;
+    font-weight: bold;
+}
+nav ul li{
+    padding: 0 1rem;
+    text-transform: capitalize;
+}
+.donate{
+    padding: 1rem;
+    background: #d4d41a;
+    text-transform: uppercase;
+}
+.hero-section{
+    height: 95vh;
+    background: url(./Images/about.jpg) center/cover no-repeat;
+}
+.hero-div{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+.hero-div div{
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+}
+.hero-div h1{
+    color: antiquewhite;
+    font-size: 4rem;
+}
+.show-text{
+    margin: auto;
+    color: #d4d41a;
+}
+.mission-section{
+    display: flex;
+    margin-top: -5rem;
+}
+.mission-div{
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.our-mission, .latest, .subscribe{
+    padding: 2rem 0;
+    background: #cecaca;
+}
+.our-mission div, .latest div, .subscribe div{
+    width: 70%;
+    margin: auto;
+}
+.our-mission h1, .our-mission p, .latest h1, .latest p, .pledge h1, .subscribe h1, .subscribe p, .subscribe input{
+    margin-bottom: 1rem;
+}
+.our-mission a, .latest a{
+    text-transform: capitalize;
+}
+.our-mission a:hover, .latest a:hover{
+    text-transform: uppercase;
+}
+.pledge{
+    background: url(./Images/about.jpg) center/cover no-repeat;
+}
+.pledge div{
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(197, 14, 14, 0.7);
+}
+.pledge h1{
+    color: white;
+    font-size: 2.5rem;
+}
+.pledge a, .ads-div a{
+    color: #c50e0e;
+    background: white;
+    padding: 3px 1rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+}
+.pledge a:hover, .ads-div a:hover{
+    background: transparent;
+    color: white;
+    border: 1px solid #ffffff;
+}
+.latest{
+    background: #12a088;
+}
+.latest, .subscribe, .ads-div h1{
+    color: var(--secondary-color);
+}
+.subscribe{
+    background: #112238;
+}
+.subscribe input, .subscribe-channel input{
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 5px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    outline: none;
+}
+.subscribe input:hover, .subscribe button:hover, .subscribe-channel input:hover, .subscribe-channel input:focus{
+    background: rgba(255, 255, 255, 0.5);
+}
+.subscribe button, .subscribe-channel button{
+    transition: 0.5s ease-in-out;
+    background: transparent;
+    color: white;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+.events, .news, .footer-head{
+    display: flex;
+}
+.events-div, .news-div, .foot-div{
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.events-div h1, .news-div h1{
+    padding: 2rem 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.img-gallery, .news-container, .footer-container{
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.img-gallery img{
+    width: 100%;
+    height: 15rem;
+}
+.img-gallery h3{
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+.img-gallery p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+.img-gallery a{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    transition: var(--mainTransition);
+}
+.img-gallery a:hover{
+    color: var(--primary-color);
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    text-transform: uppercase;
+}
+.ads{
+    background: url(./Images/about.jpg) center/cover no-repeat;
+    margin: 4rem 0 2rem;
+}
+.ads-div{
+    background: rgba(197, 14, 14, 0.7);
+    width: 100%;
+    display: flex;
+    height: 100%;
+    padding: 2rem 0;
+}
+.ads-div div{
+    margin: auto;
+    display: flex;
+    place-items: center;
+}
+.ads-div a{
+    margin-left: 5rem;
+}
+.news1{
+    text-align: left;
+}
+.news1 h4{
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+.news1 > p {
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+}
+.news1 > div {
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.footer-head{
+    background: #cecaca;
+}
+.footer-container{
+    text-align: left !important;
+}
+.footer-container ul{
+    list-style: none;
+}
+.footer-container h3{
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+.footer-container > div {
+    padding: 3rem 0 0;
+}
+.subscribe-channel input{
+    color: var(--primary-color);
+}
+.registered, footer{
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.registered{
+    background: #12a088;
+    color: var(--primary-color);
+}
+footer{
+    background: #112238;
+    color: var(--secondary-color);
+}

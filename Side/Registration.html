@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Page</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Fill the form below to complete your registration</h2>
+        <form class="formbox" method="POST">
+            <div class="name-input">
+                <div class="form-group required">
+                    <label for="firstName">first Name</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                </div>
+                <div class="form-group required">
+                    <label for="lastName">last Name</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="gender required">
+                <label for="gender">gender:</label>
+                <input type="radio" name="gender" value="Male" id=""><span>Male</span>
+                <input type="radio" name="gender" value="Female" id=""><span>Female</span>
+            </div>
+            <div class="age required">
+                <label for="age">age:</label>
+                <div><input type="radio" name="age" value="Below 18yrs" id=""><span>Below 18yrs</span></div>
+                <div><input type="radio" name="age" value="18-25 yrs" id=""><span>18-25 yrs</span></div>
+                <div><input type="radio" name="age" value="26-35yrs" id=""><span>26-35yrs</span></div>
+                <div><input type="radio" name="age" value="36-45 yrs" id=""><span>36-45 yrs</span></div>
+                <div><input type="radio" name="age" value="Above 46yrs" id=""><span>Above 46yrs</span></div>
+            </div>
+            <div class="personal-info">
+                <div class="form-group required">
+                    <label for="birthday">birthday:</label>
+                    <input type="date" name="birthday" id="" required>
+                </div>
+                <div class="form-group required">
+                    <label for="Phone">Phone:</label>
+                    <input type="tel" name="Phone" id="" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group required">
+                    <label for="Email">Email:</label>
+                    <input type="email" name="Email" id="" placeholder="examples@mail.com" required>
+                </div>
+            </div>
+            <div class="address">
+                <div class="form-group required">
+                    <label for="Address">Address:</label>
+                    <textarea name="Address" id="" placeholder="Your Home Address" rows="10" cols="30" required></textarea>
+                </div>
+            </div>
+            <div class="form-group course">
+                <label for="Course">Course:</label>
+                <input type="text" name="Course" readonly id="" value="">
+            </div>
+            <div class="form-group required passport">
+                <label for="Passport">Upload your passport photogragh</label>
+                <input type="file" name="PassPort" id="">
+            </div>
+            <button type="submit" value="Submit" class="btn-submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; luzoma innovation hub. <span class="date"></span></p>
+    </footer>
+
+    <script>
+        let date = document.querySelector('.date');
+        date.appendChild(document.createTextNode(new Date().getFullYear()));
+    </script>
+</body>
+</html>

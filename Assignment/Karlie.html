@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karlie Rose Manager</title>
+    <style>
+        .header1, .footer1{
+            background: #df4760;
+            display: flex;
+            height: 10vh;
+            place-items: center;
+        }
+        .footer1{
+            justify-content: center;
+            border-top: 0.3rem solid white;
+        }
+        .header1 div{
+            width: 10%;
+        }
+        .header1 h1{
+            width: 90%;
+            text-align: center;
+            color: blueviolet;
+        }
+        .navbar1 ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            background: white;
+            height: 7vh;
+            place-items: center;
+            text-transform: uppercase;
+            color: #df4760;
+        }
+        .about-cont, .about-details1{
+            display: flex;
+            height: 50vh;
+        }
+        .about1{
+            border-right: 0.3rem solid white;
+            width: 25%;
+            padding: 0.5rem;
+        }
+        .about1 h2{
+            text-transform: capitalize;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .about-details1{
+            background: lightgreen;
+            padding: 1rem;
+            width: 100%;
+        }
+        .about-details1 div{
+            margin-left: 2rem;
+        }
+        .about-details1 p{
+            margin: 0 0 0.5rem 1rem;
+        }
+    </style>
+    <style >
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: pink;
+            font-family: Segoe Script;
+        }
+        .section{
+            height: 100vh;
+        }
+        .container{
+            border: 0.3rem solid white;
+            width: 80vw;
+            margin: auto;
+        }
+        .header, .footer{
+            height: 10vh;
+            background: #df4760;
+            color: white;
+        }
+        .header div{
+            float: left;
+            width: 10%;
+        }
+        .header h1{
+            float: left;
+            width: 90%;
+            text-align: center;
+            padding-top: 1rem;
+            color: blueviolet;
+        }
+        .clear{
+            clear: both;
+        }
+        .navbar ul{
+            width: 100%;
+            height: 8vh;
+            background: white;
+        }
+        .navbar li {
+            float: left;
+            margin: 1rem 0 0 1.95rem;
+            width: 9vw;
+            color: #df4760;
+            text-transform: uppercase;
+        }
+        .about, .about-details, .about-details img, .about-details div {
+            float: left;
+        }
+        .about{
+            width: 15vw;
+            border-right: 0.3rem solid white;
+            height: 50vh;
+            padding: 0.5rem;
+        }
+        .about h2{
+            margin-bottom: 1.5rem;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .about-details{
+            background: lightgreen;
+            height: 50vh;
+            width: 126.35vh;
+            padding: 1rem;
+        }
+        .about-details div{
+            margin-left: 2rem;
+        }
+        .about-details p{
+            margin: 0 0 0.5rem 1rem;
+        }
+        .footer{
+            text-align: center;
+            color: black;
+            padding-top: 1.5rem;
+            border-top: 0.3rem solid white;
+        }
+    </style>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            For Flexbox
+            <header class="header1">
+                <div>
+                    <img src="logo.svg" alt="Logo">
+                </div>
+                <h1>Karlie Rae Wanger</h1>
+            </header>
+            <nav class="navbar1">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>drawings</li>
+                    <li>paintings</li>
+                    <li>media</li>
+                    <li>scratch</li>
+                    <li>contact</li>
+                </ul>
+            </nav>
+            <div class="about-cont">
+                <aside class="about1">
+                    <h2>about</h2>
+                    <p>I'm 20 years old and I'm originally from Minnesata. I made the decision to move when I was 18. Yes, it is really as cold as we say it is up north. I traded my snow-shoevering life for you round beach access.</p>
+                </aside>
+                <section class="about-details1">
+                    <img src="../END-HUNGER/Images/about.jpg" width="300" height="200" alt="Me">
+                    <div>
+                        <p>Random facts about Karlie:</p>
+                        <ul>
+                            <li>I am proud owner of 3 cats</li>
+                            <li>I am proud owner of 3 cats</li>
+                            <li>I am proud owner of 3 cats</li>
+                            <li>I am proud owner of 3 cats</li>
+                            <li>I am proud owner of 3 cats</li>
+                            <li>I am proud owner of 3 cats</li>
+                            <li>I am proud owner of 3 cats</li>
+                            <li>I am proud owner of 3 cats</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <footer class="footer1">
+                <p>&copy; Karlie Rae Wanger 2017</p>
+            </footer>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            For Float
+            <header class="header">
+                <div>
+                    <img src="logo.svg" alt="Logo">
+                </div>
+                <h1>Karlie Rae Wanger</h1>
+            </header>
+            <div class="clear"></div>
+            <nav class="navbar">
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>drawings</li>
+                    <li>paintings</li>
+                    <li>media</li>
+                    <li>scratch</li>
+                    <li>contact</li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+            <aside class="about">
+                <h2>about</h2>
+                <p>I'm 20 years old and I'm originally from Minnesata. I made the decision to move when I was 18. Yes,
+                    it is really as cold as we say it is up north. I traded my snow-shoevering life for you round beach
+                    access.</p>
+            </aside>
+            <section class="about-details">
+                <img src="../END-HUNGER/Images/about.jpg" width="300" height="200" alt="Me">
+                <div>
+                    <p>Random facts about Karlie:</p>
+                    <ul>
+                        <li>I am proud owner of 3 cats</li>
+                        <li>I am proud owner of 3 cats</li>
+                        <li>I am proud owner of 3 cats</li>
+                        <li>I am proud owner of 3 cats</li>
+                        <li>I am proud owner of 3 cats</li>
+                        <li>I am proud owner of 3 cats</li>
+                        <li>I am proud owner of 3 cats</li>
+                        <li>I am proud owner of 3 cats</li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <div class="clear"></div>
+            <footer class="footer">
+                <p>&copy; Karlie Rae Wanger 2017</p>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>
